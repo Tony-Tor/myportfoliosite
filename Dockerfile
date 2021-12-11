@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk17:ubi
+FROM openjdk:17
 
 ARG JAR_FILE=target/myportfoliosite-0.0.1-SNAPSHOT.jar
 WORKDIR /opt/app
