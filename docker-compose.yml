@@ -12,6 +12,7 @@ services:
       spring.datasource.url: jdbc:postgresql://db:5432/test_db
       spring.datasource.username: postgres
       spring.datasource.password: password
+      spring.jpa.hibernate.ddl-auto: create
     ports:
       - "8080:8080"
     networks:
