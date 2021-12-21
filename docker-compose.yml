@@ -10,6 +10,7 @@ volumes:
 
 services:
   app:
+    container_name: webapp
     build: .
     environment:
       spring.datasource.url: jdbc:postgresql://db:5432/test_db
@@ -25,6 +26,7 @@ services:
 
   db:
     image: postgres:12
+    container_name: postgres
     volumes:
       - postgres_data:/var/lib/postgresql/data
     networks:
